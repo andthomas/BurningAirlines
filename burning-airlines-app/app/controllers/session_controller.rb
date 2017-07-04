@@ -3,20 +3,22 @@ class SessionController < ApplicationController
   end
 
   def create
-  end
+    user = User.find_by username: params[:username]
 
-  def edit
-  end
+    if user.present? and user.authenticate params[:password]
+      # success!
+      session[:user_id] = user.id
+      redirect_to user_path(user)
+    else
+      # mismatch/bad credentials
+      flash[:error] = "Incorrect username and/or password"
+      redirect_to '/login'
+    end
 
-  def update
-  end
-
-  def show
-  end
-
-  def index
   end
 
   def destroy
+    session[:user_id] = nil
+    redirect_to '/login'
   end
 end
