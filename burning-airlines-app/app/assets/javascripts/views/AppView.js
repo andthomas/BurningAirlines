@@ -4,11 +4,11 @@ app.appView = Backbone.View.extend({
 
   render: function(){
 
-    template = $('#AppViewTemplate').html();
+    var template = $('#AppViewTemplate').html();
     this.$el.html( template );
 
     this.collection.each(function(flight){
-      flv = new app.FlightListView({
+      var flv = new app.FlightListView({
         model: flight
       });
       flv.render();
@@ -16,5 +16,12 @@ app.appView = Backbone.View.extend({
 
     console.log('AppView rendered')
 
-  }
+  },
+  // showFlight: function( id ){
+  //   var flight = app.flights.get( id );
+  //   var fv = new app.FlightView({
+  //     model: flight
+  //   });
+  //   fv.render();
+  // }
 });
