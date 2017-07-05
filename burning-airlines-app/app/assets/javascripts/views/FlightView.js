@@ -3,7 +3,8 @@ var app = app || {};
 app.FlightView = Backbone.View.extend({
   el: "#reservationsTable",
   render: function(){
-
+    console.log('FlightView');
+    debugger;
     var rawTemplate = $("#ReservationViewTemplate").html();
     var template = _.template( rawTemplate );
 

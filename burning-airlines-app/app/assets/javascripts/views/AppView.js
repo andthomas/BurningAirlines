@@ -14,14 +14,19 @@ app.appView = Backbone.View.extend({
       flv.render();
     });
 
-    console.log('AppView rendered')
+    console.log('AppView rendered');
 
   },
-  // showFlight: function( id ){
-  //   var flight = app.flights.get( id );
-  //   var fv = new app.FlightView({
-  //     model: flight
-  //   });
-  //   fv.render();
-  // }
+  showFlight: function( id ){
+    // $('#reservationsTable' ).show();
+    // app.appFlights.fetch(function(){
+    var flight = app.appFlights.get( id );
+    // var user_id = app.appUsers.get( id );
+
+  // });
+    var fv = new app.FlightView({
+      model: flight
+    });
+    rv.render();
+  }
 });

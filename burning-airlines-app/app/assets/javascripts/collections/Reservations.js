@@ -8,7 +8,7 @@ app.Reservations = Backbone.Collection.extend({
     this.on("add", function( reservation ){
       console.log('A reservation was added to the collection');
       var reservationView = new app.ReservationView({
-        model: reservation
+        model: flight
       });
       reservationView.render();
     });
