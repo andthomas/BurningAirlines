@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  # root 'flights#app'
+  # get '/app' => 'flights#app'
+  # root to: "flights#index"
 
-  root to: "flights#index"
+  root 'pages#app'
+  get '/app' => 'pages#app'
 
   get     '/login' => 'session#new'       # login form
   post    '/login' => 'session#create'   # check credentials & attempt login (set session)

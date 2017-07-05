@@ -2,11 +2,13 @@ var app = app || {};
 
 app.AppRouter = Backbone.Router.extend({
   routes: {
-    '': 'initializeFilghts'
+    '': 'search'
   },
-  initializeFilghts: function(){
+  search: function(){
     console.log('Navigated to default route initializeFlights ()');
-    var appView = new app.appView();
+    var appView = new app.appView({
+      collection: app.flights
+    });
     appView.render();
   }
 });

@@ -1,13 +1,13 @@
-var app = app | {};
+var app = app || {};
 
-app.Planes = Backbone.Collection.extend({
-  url: "/Planes",
+app.Reservations = Backbone.Collection.extend({
+  url: "/Reservations",
   model: app.Reservation,
 
   initialize: function(  ){
     this.on("add", function( reservation ){
       console.log('A reservation was added to the collection');
-      va reservationView = new app.ReservationView({
+      var reservationView = new app.ReservationView({
         model: reservation
       });
       reservationView.render();
