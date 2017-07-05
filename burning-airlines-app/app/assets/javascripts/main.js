@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 var app = app || {};
 console.log('main.js loading...');
 
 
+=======
+>>>>>>> e01867184dae337ec20b7bd1570815020ad042fa
 _.templateSettings = {
      evaluate : /\{\[([\s\S]+?)\]\}/g,
      interpolate : /\{\{([\s\S]+?)\}\}/g
@@ -14,7 +17,7 @@ app.router = new app.AppRouter();
 
 app.flights = new app.Flights();
 
-app.reservations = new app.Reservations();
+// app.reservations = new app.Reservations();
 
 $(document).ready(function(){
 
