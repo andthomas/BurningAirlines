@@ -21,9 +21,9 @@ app.flightSearchView = Backbone.View.extend({
   //   return flight.attributes.destination;
   // });
 
-  var flightFind = _.filter(app.flights.models, function(f){
-    // if f.
-  })
+  // var flightFind = _.filter(app.flights.models, function(f){
+  //   // if f.
+  // })
 
 
 });
