@@ -1,17 +1,10 @@
 Rails.application.routes.draw do
-  get 'session/new'
 
-  get 'session/create'
+  root to: "flights#index"
 
-  get 'session/edit'
-
-  get 'session/update'
-
-  get 'session/show'
-
-  get 'session/index'
-
-  get 'session/destroy'
+  get     '/login' => 'session#new'       # login form
+  post    '/login' => 'session#create'   # check credentials & attempt login (set session)
+  delete  '/login' => 'session#destroy'  # logout (destroy session)
 
   resources :users
   resources :reservations

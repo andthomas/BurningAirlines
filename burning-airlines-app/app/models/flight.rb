@@ -7,9 +7,9 @@
 #  origin      :string
 #  destination :string
 #  date        :date
-#  airplane_id :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  airplane_id :integer
 #
 
 class Flight < ApplicationRecord
