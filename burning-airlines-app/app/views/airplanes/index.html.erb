@@ -1,5 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+<nav><%= link_to 'Planes', airplanes_path %>|<%= link_to 'Flights', flights_path %>|<%= link_to 'Admin', users_path %>
+
+<h1>New Airplane</h1>
+
+<%= render 'form', airplane: @airplane %>
+
+<%= link_to 'Back', airplanes_path %>
+
+<br/><br/>
+
 <h1>Airplanes</h1>
 
 <table>
