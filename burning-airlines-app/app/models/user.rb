@@ -3,8 +3,6 @@
 # Table name: users
 #
 #  id              :integer          not null, primary key
-#  flight_id       :integer
-#  reservation_id  :integer
 #  admin           :boolean
 #  username        :string
 #  password_digest :string
