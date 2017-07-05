@@ -1,21 +1,3 @@
-var app = app || {};
-
-// _.templateSettings = {
-//      evaluate : /\{\[([\s\S]+?)\]\}/g,
-//      interpolate : /\{\{([\s\S]+?)\}\}/g
-// };
-
-app.router = new app.AppRouter();
-
-app.flight = new app.Flights();
-
-
-
-$(function(){
-  app.flight.fetch().done(function(){
-    Backbone.history.start();
-  });
-
 _.templateSettings = {
      evaluate : /\{\[([\s\S]+?)\]\}/g,
      interpolate : /\{\{([\s\S]+?)\}\}/g
@@ -30,7 +12,7 @@ app.router = new app.AppRouter();
 
 app.flights = new app.Flights();
 
-app.reservations = new app.Reservations();
+// app.reservations = new app.Reservations();
 
 $(document).ready(function(){
 

@@ -1,12 +1,9 @@
+
 var app = app || {};
 
 console.log('collections/Flights.js loading')
 
 app.Flights = Backbone.Collection.extend({
-  url: "",
-  model: app.Flights,
-
-  initialize: function( ){
   url: "/flights",
   model: app.Flight,
 
