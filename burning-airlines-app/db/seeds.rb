@@ -19,8 +19,8 @@ r1 = Reservation.create flight_id: 1, user_id: 1, seat_row: 12, seat_column: 4
 r2 = Reservation.create flight_id: 2, user_id: 2, seat_row: 10, seat_column: 3
 
 User.destroy_all
-u1 = User.create admin: true, username: "Pauly", password_digest: "chicken"
-u2 = User.create admin: false, username: "Jane", password_digest: "chicken"
+u1 = User.create admin: true, username: "Pauly", password: "chicken"
+u2 = User.create admin: false, username: "Jane", password: "chicken"
 
 u1.reservations << r1
 u2.reservations << r2

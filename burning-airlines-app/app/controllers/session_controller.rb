@@ -22,3 +22,16 @@ class SessionController < ApplicationController
     redirect_to '/login'
   end
 end
+
+
+# user = User.find_by email: params[:email]
+#
+# if user.present? and user.authenticate params[:password]
+#   #success
+#   session[:user_id] = user.id
+#   redirect_to user_path(user)
+# else
+#   #fila
+#   flash[:error] = "Incorrect email address and/or password"
+#   redirect_to login_path
+# end
