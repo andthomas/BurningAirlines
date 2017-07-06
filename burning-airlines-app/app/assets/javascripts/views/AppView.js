@@ -5,21 +5,6 @@ app.appView = Backbone.View.extend({
   events: {
     "click button": "searchFlight",
   },
-  // 'click button': 'searchFlights',
-
-  // render: function(){
-  //
-  //   var template = $('#AppViewTemplate').html();
-  //   this.$el.html( template );
-  //
-    // var fsv = new app.FlightSearchView({
-    //   model: flight
-    // });
-  //   fsv.render();
-  //
-  //   console.log('AppView rendered');
-  //
-  // },
 
   render: function(){
     var rawTemplate = $("#AppViewTemplate").html();
