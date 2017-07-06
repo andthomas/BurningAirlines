@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var app = app || {};
 
 // This view's responsibility is to:
@@ -19,7 +18,7 @@ app.ReservationView = Backbone.View.extend({
     this.$el.html( markup );
   }
 });
-=======
+
 // var app = app || {};
 //
 // // This view's responsibility is to:
@@ -34,4 +33,3 @@ app.ReservationView = Backbone.View.extend({
 //
 //   }
 // });
->>>>>>> e01867184dae337ec20b7bd1570815020ad042fa
