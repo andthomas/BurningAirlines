@@ -1,4 +1,13 @@
-<h1>Editing Flight</h1>
+
+<nav>
+  <span>
+    <%= link_to 'Planes', airplanes_path %>  |  <%= link_to 'Flights', flights_path %>  |  <%= link_to 'Admin', users_path %>
+  </span>
+  <span class="nav-right">
+   <%= link_to 'Logout', login_path, method: :delete %>
+  </span>
+
+  <h1>Editing Flight</h1>
 
 <%= render 'form', flight: @flight %>
 

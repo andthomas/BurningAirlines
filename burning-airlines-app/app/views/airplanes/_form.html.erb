@@ -11,22 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
+<form>
+  
+  <div class="row">
+    <div class="field col s6">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+  </div><!-- row -->
 
-  <div class="field">
-    <%= f.label :rows %>
-    <%= f.number_field :rows %>
-  </div>
+  <div class="row">
+    <div class="field col s6">
+      <%= f.label :rows %>
+      <%= f.number_field :rows %>
+    </div>
+  </div><!-- row -->
 
-  <div class="field">
-    <%= f.label :columns %>
-    <%= f.number_field :columns %>
-  </div>
+  <div class="row">
+    <div class="field col s6">
+      <%= f.label :columns %>
+      <%= f.number_field :columns %>
+    </div>
+  </div><!-- row -->
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <div class="row">
+    <div class="field col s6">
+      <div class="actions">
+      <%= f.submit %>
+      </div>
+    </div>
+  </div><!-- row -->
+
+</form>
+
 <% end %>

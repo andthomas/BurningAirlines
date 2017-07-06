@@ -11,32 +11,47 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :flight_no %>
-    <%= f.number_field :flight_no %>
-  </div>
+<div class="row">
+  <form class="col s12">
 
-  <div class="field">
-    <%= f.label :origin %>
-    <%= f.text_field :origin %>
-  </div>
+    <div class="row">
+      <div class="field col s6">
+        <!-- <div class="active"> -->
+        <%= f.label :flight_no %>
+        <!-- </div> -->
+        <%= f.number_field :flight_no %>
+      </div>
+      <div class="field col s6">
+        <!-- <div class="active"> -->
+        <%= f.label :airplane_id %>
+        <!-- </div> -->
+        <%= f.number_field :airplane_id %>
+      </div>
+    </div><!-- row -->
 
-  <div class="field">
-    <%= f.label :destination %>
-    <%= f.text_field :destination %>
-  </div>
+    <div class="row">
+      <div class="field col s6">
+        <%= f.label :origin %>
+        <%= f.text_field :origin %>
+      </div>
+      <div class="field col s6">
+        <%= f.label :destination %>
+        <%= f.text_field :destination %>
+      </div>
+    </div><!-- row -->
 
-  <div class="field">
-    <%= f.label :date %>
-    <%= f.date_select :date %>
-  </div>
+    <div class="row">
+      <div class="field col s6">
+        <%= f.label :date %>
+        <%= f.date_field :date %>
+      </div>
+      <div class="field col s6">
+        <div class="actions">
+        <%= f.submit %>
+        </div>
+      </div>
+    </div><!-- row -->
 
-  <div class="field">
-    <%= f.label :airplane_id %>
-    <%= f.number_field :airplane_id %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  </form>
+</div><!-- row -->
 <% end %>

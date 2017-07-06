@@ -1,14 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<nav><%= link_to 'Planes', airplanes_path %>|<%= link_to 'Flights', flights_path %>|<%= link_to 'Admin', users_path %>
+<nav>
+  <span>
+    <%= link_to 'Planes', airplanes_path %>  |  <%= link_to 'Flights', flights_path %>  |  <%= link_to 'Admin', users_path %>
+  </span>
+  <span class="nav-right">
+   <%= link_to 'Logout', login_path, method: :delete %>
+  </span>
 
 <h1>New Flight</h1>
 
 <%= render 'form', flight: @flight %>
 
-<%= link_to 'Back', flights_path %>
-
-<br/><br/><br/>
+<div class="row">
+  <div class="col 3">
+    <%= link_to 'Back', flights_path %>
+  </div>
+</div>
 
 <h1>Flights</h1>
 
