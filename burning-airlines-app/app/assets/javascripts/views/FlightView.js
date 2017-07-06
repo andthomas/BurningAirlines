@@ -11,6 +11,12 @@ app.FlightView = Backbone.View.extend({
 
     var markup = template( this.model.attributes );
 
+    console.log( this.model.attributes )
+
     this.$el.html( markup );
+
+    console.log( this.model.attributes.airplane.rows )
+    console.log( this.model.attributes.airplane.columns )
+
   }
 });
