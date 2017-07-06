@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   root 'pages#app'
   get '/app' => 'pages#app'
+  post '/app' => 'pages#app'
 
   get     '/login' => 'session#new'       # login form
   post    '/login' => 'session#create'   # check credentials & attempt login (set session)

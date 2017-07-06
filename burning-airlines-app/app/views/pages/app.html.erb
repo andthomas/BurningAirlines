@@ -1,25 +1,29 @@
 <div id="app">
-  This is where Backbone will load all the app HTML.
 </div>
 
 <script type="html/javascript" id="AppViewTemplate">
+
+<div id="searchForm">
+<input placeholder= "From" id= "tb1"></input>
+<input placeholder= "To" id = "tb2"></input>  <br>
+<button>Search</button>
+</div>
 <div id="appView">
-  <h1>Our Flights App</h1>
-  <hr/>
-  <nav>
-      <a href="#">All Flights</a>
-      <a href="#">A Flight</a>
-  </nav>
+  <h1>Flight Search Results</h1>
+
+
   <table id="flightsTable">
       <tr>
         <td>Date</td>
         <td>Flight Number</td>
         <td>Origin</td>
         <td>Destination</td>
+        <td>Plane</td>
       <tr>
   </table>
-
+<hr/>
 </div>
+
 </script>
 
 <script type="html/javascript" id="FlightViewTemplate">
@@ -29,24 +33,14 @@
       <td>{{ destination }}</td>
 </script>
 
-
-<script type="html/javascript" id="AppViewTemplate">
- <div id="appView">
-
-  <table id="reservationsTable">
-      <tr>
-        <td>Date</td>
-        <td>Flight Number</td>
-        <td>Origin</td>
-        <td>Destination</td>
-      <tr>
-  </table>
-
-</div>
-</script>
-
 <script type="html/javascript" id="ReservationViewTemplate">
-
+    <tr>
+      <td>Date</td>
+      <td>Flight Number</td>
+      <td>Origin</td>
+      <td>Destination</td>
+      <td>Plane</td>
+    <tr>
     <tr>
       <td>{{ date }}</td>
       <td>{{ flight_no }}</td>
@@ -54,4 +48,9 @@
       <td>{{ destination }}</td>
     <tr>
 
+
 </script>
+
+
+
+<!-- <script id="table"></script> -->
