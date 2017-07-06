@@ -1,10 +1,9 @@
-
 var app = app || {};
 
 app.FlightView = Backbone.View.extend({
-  el: "#reservationsTable",
+  el: "#app",
   render: function(){
-
+    console.log( this.model )
     var rawTemplate = $("#ReservationViewTemplate").html();
     var template = _.template( rawTemplate );
 
