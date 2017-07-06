@@ -15,7 +15,7 @@ app.FlightListView = Backbone.View.extend({
     var markup = template( this.model.attributes );
     this.$el.html( markup );
     this.$el.appendTo( "#flightsTable" );
-  console.log(markup);
+    console.log(markup);
     console.log("flightsTable:", $("#flightsTable")  );
 
   },
@@ -23,10 +23,10 @@ app.FlightListView = Backbone.View.extend({
     "click": "showFlight"
   },
   showFlight: function(){
-    // var id = this.model.get("id");
+    var id =this.model.get("id");
     // debugger;
     console.log(this.model.get("id"))
-    // app.router.navigate("flights/"+ id, true);
+    app.router.navigate("flights/"+ id, true);
   }
 
 
